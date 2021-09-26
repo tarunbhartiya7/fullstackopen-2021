@@ -1,0 +1,14 @@
+note over browser:
+browser executes the form submission handler,
+pushes new note to the notes list
+that renders notes to display with the new note
+end note
+
+browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+
+note over server:
+server parses data from browser and
+saves in local/database
+end note
+
+server-->browser: [{ content: New note", date: "2019-05-23" }], Content-type: application/json
