@@ -7,16 +7,15 @@ const PersonForm = ({ addPerson }) => {
   const handleSubmit = (event) => {
     event.preventDefault()
 
-    addPerson(newName, newNumber)
+    addPerson(newName.trim(), newNumber.trim())
 
     setNewName("")
     setNewNumber("")
   }
 
-  const handleNoteChange = (event) => setNewName(event.target.value.trim())
+  const handleNoteChange = (event) => setNewName(event.target.value)
 
-  const handlePhoneNumberChange = (event) =>
-    setNewNumber(event.target.value.trim())
+  const handlePhoneNumberChange = (event) => setNewNumber(event.target.value)
 
   return (
     <>
