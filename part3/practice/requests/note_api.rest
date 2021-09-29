@@ -16,3 +16,9 @@ content-type: application/json
 ###
 
 DELETE  http://localhost:3001/api/notes/4
+
+###
+
+GET http://localhost:3001/unknown
+
+###
